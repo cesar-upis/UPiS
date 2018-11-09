@@ -1,0 +1,17 @@
+public state void main (String[] args)
+{
+  Aluno a = new Aluno();
+  System.out.println(a.toString()); // Saída: Aluno
+  
+  Carro c = new Carro();
+  System.out.println(c.toString()); // Saída: Carro
+  
+  Object o = new Object();
+  System.out.println(o.toString()); // Saída: java.lang.Object@7852e922
+  
+  o = a;
+  System.out.println(o.toString()); // Saída: Aluno
+  
+  o = c;
+  System.out.println(o.toString()); // Saída: Carro
+}
